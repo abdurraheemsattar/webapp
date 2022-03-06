@@ -16,7 +16,7 @@ import java.util.List;
 @RestController
 public class TopicControllers {
 
-    Logger log = LoggerFactory.getLogger(TopicControllers.class);
+    //Logger log = LoggerFactory.getLogger(TopicControllers.class);
 
     @Autowired
     private TopicService topicService;
@@ -30,8 +30,7 @@ public class TopicControllers {
     //@RequestMapping("/topics")
     public List<Topic> getAllTopics() {
         //log.trace("getAllTopics method called");
-
-        log.info("getAllTopics method called");
+        //log.info("getAllTopics method called");
         return topicService.getAllTopics();
     }
 
@@ -39,7 +38,7 @@ public class TopicControllers {
     //@RequestMapping("/topics/{id}")
     public Topic getTopic(@PathVariable String id) {
         //log.trace("getTopic method called");
-        log.info("getTopic method called");
+        //log.info("getTopic method called");
         return topicService.getTopic(id);
     }
 
@@ -47,7 +46,7 @@ public class TopicControllers {
     //@RequestMapping(method = RequestMethod.POST, value = "/topics")
     public void addTopic(@RequestBody Topic topic) {
         //log.trace("addTopic method called");
-        log.info("addTopic method called");
+        //log.info("addTopic method called");
         topicService.addTopic(topic);
     }
 
@@ -56,7 +55,7 @@ public class TopicControllers {
     //@RequestMapping(method = RequestMethod.PUT, value = "/topics/{id}")
     public void updateTopic(@RequestBody Topic topic, @PathVariable String id) {
         //log.trace("updateTopic method called");
-        log.info("updateTopic method called");
+        //log.info("updateTopic method called");
         topicService.updateTopic(topic, id);
     }
 
@@ -65,7 +64,7 @@ public class TopicControllers {
     //@RequestMapping(method = RequestMethod.DELETE, value = "/topics/{id}")
     public void deleteTopic(@PathVariable String id) {
         //log.trace("deleteTopic method called");
-        log.info("deleteTopic method called");
+        //log.info("deleteTopic method called");
         topicService.deleteTopic(id);
     }
 
