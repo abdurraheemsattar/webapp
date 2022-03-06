@@ -13,7 +13,7 @@ import java.util.List;
 public class CourseControllers {
 
 
-    Logger log = LoggerFactory.getLogger(CourseControllers.class);
+    //Logger log = LoggerFactory.getLogger(CourseControllers.class);
 
 
     @Autowired
@@ -21,20 +21,20 @@ public class CourseControllers {
 
     @RequestMapping("/topics/{id}/courses")
     public List<Course> getAllCourses(@PathVariable String id) {
-        log.info("getAllCourses method called");
+        //log.info("getAllCourses method called");
         return courseService.getAllCourses(id);
     }
 
     @RequestMapping("/topics/{topicId}/courses/{id}")
     public Course getCourse(@PathVariable String id) {
-        log.info("getCourse method called");
+        //log.info("getCourse method called");
         return courseService.getCourse(id);
     }
 
 
     @RequestMapping(method = RequestMethod.POST, value = "/topics/{topicId}/courses")
     public void addCourse(@RequestBody Course course, @PathVariable String topicId) {
-        log.info("addCourse method called");
+        //log.info("addCourse method called");
         course.setTopic(new Topic(topicId, "", ""));
         courseService.addCourse(course);
     }
@@ -42,14 +42,14 @@ public class CourseControllers {
 
     @RequestMapping(method = RequestMethod.PUT, value = "/topics/{topicId}/courses/{id}")
     public void updateTopic(@RequestBody Course course, @PathVariable String topicId, @PathVariable String id) {
-        log.info("updateTopic method called");
+        //log.info("updateTopic method called");
         course.setTopic(new Topic(topicId, "", ""));
         courseService.updateCourse(course);
     }
 
     @RequestMapping(method = RequestMethod.DELETE, value = "/topics/{topicId}/courses/{id}")
     public void deleteTopic(@PathVariable String id) {
-        log.info("deleteTopic method called");
+        //log.info("deleteTopic method called");
         courseService.deleteCourse(id);
     }
 

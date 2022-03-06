@@ -13,12 +13,6 @@ public class CourseService {
     private CourseRepository courseRepository;
 
 
-//    private List<Topic> topics = new ArrayList<>(Arrays.asList(
-//                new Topic("spring1", "1st other string", "Spring Framework Description1"),
-//                new Topic("spring2", "2nd other string", "Spring Framework Description2"),
-//                new Topic("spring3", "3rd other string", "Spring Framework Description3")
-//    ));
-
     public List<Course> getAllCourses(String topicId) {
         List<Course> courses = new ArrayList<>();
         courseRepository.findByTopicId(topicId)
