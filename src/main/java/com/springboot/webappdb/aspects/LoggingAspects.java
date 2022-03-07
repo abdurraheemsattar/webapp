@@ -2,6 +2,7 @@ package com.springboot.webappdb.aspects;
 
 
 import org.aspectj.lang.JoinPoint;
+import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.slf4j.Logger;
@@ -21,7 +22,13 @@ public class LoggingAspects {
     @Before("execution(* com.springboot.webappdb.*.*.*(..))")
     public void beforeLogger(JoinPoint joinPoint) {
         //joinPoint.getSignature().getName();
-        log.trace(joinPoint.getSignature() + " method called");
+        log.trace(joinPoint.getSignature() + " method called before execution");
+    }
+
+    @After("execution(* com.springboot.webappdb.*.*.*(..))")
+    public void afterLogger(JoinPoint joinPoint) {
+        //joinPoint.getSignature().getName();
+        log.trace(joinPoint.getSignature() + " method called after execution");
     }
 
 
