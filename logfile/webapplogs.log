@@ -1,30 +1,184 @@
-2022-03-07 05:24:34.010  INFO 1800 --- [main] c.s.webappdb.WebappDbApplication         : Starting WebappDbApplication using Java 17.0.1 on Abdurraheem with PID 1800 (E:\abdur\Documents\IntelliJ\webappDb\target\classes started by abdur in E:\abdur\Documents\IntelliJ\webappDb)
-2022-03-07 05:24:34.023 DEBUG 1800 --- [main] c.s.webappdb.WebappDbApplication         : Running with Spring Boot v2.6.4, Spring v5.3.16
-2022-03-07 05:24:34.025  INFO 1800 --- [main] c.s.webappdb.WebappDbApplication         : No active profile set, falling back to 1 default profile: "default"
-2022-03-07 05:24:35.232  INFO 1800 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-03-07 05:24:35.318  INFO 1800 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 68 ms. Found 2 JPA repository interfaces.
-2022-03-07 05:24:36.774  INFO 1800 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-03-07 05:24:36.787  INFO 1800 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-03-07 05:24:36.787  INFO 1800 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.58]
-2022-03-07 05:24:36.957  INFO 1800 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-03-07 05:24:36.958  INFO 1800 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2787 ms
-2022-03-07 05:24:37.367  INFO 1800 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-03-07 05:24:37.483  INFO 1800 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.5.Final
-2022-03-07 05:24:37.885  INFO 1800 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-03-07 05:24:38.067  INFO 1800 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-03-07 05:24:38.414  INFO 1800 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-03-07 05:24:38.443  INFO 1800 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-2022-03-07 05:24:39.306  INFO 1800 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-03-07 05:24:39.314  INFO 1800 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-03-07 05:24:40.140  WARN 1800 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-03-07 05:24:41.423  INFO 1800 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2022-03-07 05:24:41.435  INFO 1800 --- [main] c.s.webappdb.WebappDbApplication         : Started WebappDbApplication in 8.049 seconds (JVM running for 8.731)
-2022-03-07 05:25:12.618  INFO 1800 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-03-07 05:25:12.618  INFO 1800 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-03-07 05:25:12.620  INFO 1800 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2022-03-07 05:25:12.658 TRACE 1800 --- [http-nio-8080-exec-1] Aspects$$EnhancerBySpringCGLIB$$bfd1a2f6 : List com.springboot.webappdb.topics.TopicControllers.getAllTopics() method called before execution
-2022-03-07 05:25:12.671 TRACE 1800 --- [http-nio-8080-exec-1] Aspects$$EnhancerBySpringCGLIB$$bfd1a2f6 : List com.springboot.webappdb.topics.TopicService.getAllTopics() method called before execution
-2022-03-07 05:25:12.680 TRACE 1800 --- [http-nio-8080-exec-1] Aspects$$EnhancerBySpringCGLIB$$bfd1a2f6 : Iterable org.springframework.data.repository.CrudRepository.findAll() method called before execution
-2022-03-07 05:25:12.876 TRACE 1800 --- [http-nio-8080-exec-1] Aspects$$EnhancerBySpringCGLIB$$bfd1a2f6 : Iterable org.springframework.data.repository.CrudRepository.findAll() method called after execution
-2022-03-07 05:25:12.877 TRACE 1800 --- [http-nio-8080-exec-1] Aspects$$EnhancerBySpringCGLIB$$bfd1a2f6 : List com.springboot.webappdb.topics.TopicService.getAllTopics() method called after execution
-2022-03-07 05:25:12.877 TRACE 1800 --- [http-nio-8080-exec-1] Aspects$$EnhancerBySpringCGLIB$$bfd1a2f6 : List com.springboot.webappdb.topics.TopicControllers.getAllTopics() method called after execution
+2022-03-08 07:14:10.326  INFO 8500 --- [main] c.s.webappdb.WebappDbApplication         : Starting WebappDbApplication using Java 17.0.1 on Abdurraheem with PID 8500 (E:\abdur\Documents\IntelliJ\webappDb\target\classes started by abdur in E:\abdur\Documents\IntelliJ\webappDb)
+2022-03-08 07:14:10.338 DEBUG 8500 --- [main] c.s.webappdb.WebappDbApplication         : Running with Spring Boot v2.6.4, Spring v5.3.16
+2022-03-08 07:14:10.338  INFO 8500 --- [main] c.s.webappdb.WebappDbApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-03-08 07:14:11.775  INFO 8500 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-08 07:14:11.851  INFO 8500 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 65 ms. Found 2 JPA repository interfaces.
+2022-03-08 07:14:13.494  INFO 8500 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-03-08 07:14:13.514  INFO 8500 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-08 07:14:13.514  INFO 8500 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-03-08 07:14:13.710  INFO 8500 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-03-08 07:14:13.710  INFO 8500 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3278 ms
+2022-03-08 07:14:14.048  INFO 8500 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-08 07:14:14.136  INFO 8500 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-03-08 07:14:14.395  INFO 8500 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-03-08 07:14:14.547  INFO 8500 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-03-08 07:14:14.841  INFO 8500 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-03-08 07:14:14.861  INFO 8500 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-03-08 07:14:15.853  INFO 8500 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-08 07:14:15.858  INFO 8500 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-03-08 07:14:16.628 TRACE 8500 --- [main] Aspects$$EnhancerBySpringCGLIB$$cfdf6b97 : OpenAPI com.springboot.webappdb.WebappDbApplication$SwaggerConfig.springOpenAPI() method called before execution
+2022-03-08 07:14:16.644 TRACE 8500 --- [main] Aspects$$EnhancerBySpringCGLIB$$cfdf6b97 : OpenAPI com.springboot.webappdb.WebappDbApplication$SwaggerConfig.springOpenAPI() method called after execution
+2022-03-08 07:14:16.894  WARN 8500 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-08 07:14:18.286  INFO 8500 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-03-08 07:14:18.298  INFO 8500 --- [main] c.s.webappdb.WebappDbApplication         : Started WebappDbApplication in 8.57 seconds (JVM running for 9.296)
+2022-03-08 07:14:47.760  INFO 8500 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-08 07:14:47.760  INFO 8500 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-03-08 07:14:47.764  INFO 8500 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2022-03-08 07:14:47.798 TRACE 8500 --- [http-nio-8080-exec-1] Aspects$$EnhancerBySpringCGLIB$$cfdf6b97 : List com.springboot.webappdb.topics.TopicControllers.getAllTopics() method called before execution
+2022-03-08 07:14:47.807 TRACE 8500 --- [http-nio-8080-exec-1] Aspects$$EnhancerBySpringCGLIB$$cfdf6b97 : List com.springboot.webappdb.topics.TopicService.getAllTopics() method called before execution
+2022-03-08 07:14:47.811 TRACE 8500 --- [http-nio-8080-exec-1] Aspects$$EnhancerBySpringCGLIB$$cfdf6b97 : Iterable org.springframework.data.repository.CrudRepository.findAll() method called before execution
+2022-03-08 07:14:47.986 TRACE 8500 --- [http-nio-8080-exec-1] Aspects$$EnhancerBySpringCGLIB$$cfdf6b97 : Iterable org.springframework.data.repository.CrudRepository.findAll() method called after execution
+2022-03-08 07:14:47.987 TRACE 8500 --- [http-nio-8080-exec-1] Aspects$$EnhancerBySpringCGLIB$$cfdf6b97 : List com.springboot.webappdb.topics.TopicService.getAllTopics() method called after execution
+2022-03-08 07:14:47.987 TRACE 8500 --- [http-nio-8080-exec-1] Aspects$$EnhancerBySpringCGLIB$$cfdf6b97 : List com.springboot.webappdb.topics.TopicControllers.getAllTopics() method called after execution
+2022-03-08 07:15:26.103 TRACE 8500 --- [http-nio-8080-exec-3] Aspects$$EnhancerBySpringCGLIB$$cfdf6b97 : List com.springboot.webappdb.topics.TopicControllers.getAllTopics() method called before execution
+2022-03-08 07:15:26.103 TRACE 8500 --- [http-nio-8080-exec-3] Aspects$$EnhancerBySpringCGLIB$$cfdf6b97 : List com.springboot.webappdb.topics.TopicControllers.getAllTopics() method called after execution
+2022-03-08 07:16:34.846 TRACE 8500 --- [http-nio-8080-exec-6] Aspects$$EnhancerBySpringCGLIB$$cfdf6b97 : List com.springboot.webappdb.topics.TopicControllers.getAllTopics() method called before execution
+2022-03-08 07:16:34.846 TRACE 8500 --- [http-nio-8080-exec-6] Aspects$$EnhancerBySpringCGLIB$$cfdf6b97 : List com.springboot.webappdb.topics.TopicControllers.getAllTopics() method called after execution
+2022-03-08 07:17:37.657 TRACE 8500 --- [http-nio-8080-exec-9] Aspects$$EnhancerBySpringCGLIB$$cfdf6b97 : void com.springboot.webappdb.topics.TopicControllers.addTopic(Topic) method called before execution
+2022-03-08 07:17:37.657 TRACE 8500 --- [http-nio-8080-exec-9] Aspects$$EnhancerBySpringCGLIB$$cfdf6b97 : void com.springboot.webappdb.topics.TopicService.addTopic(Topic) method called before execution
+2022-03-08 07:17:37.661 TRACE 8500 --- [http-nio-8080-exec-9] Aspects$$EnhancerBySpringCGLIB$$cfdf6b97 : Object org.springframework.data.repository.CrudRepository.save(Object) method called before execution
+2022-03-08 07:17:37.722 TRACE 8500 --- [http-nio-8080-exec-9] Aspects$$EnhancerBySpringCGLIB$$cfdf6b97 : Object org.springframework.data.repository.CrudRepository.save(Object) method called after execution
+2022-03-08 07:17:37.723 TRACE 8500 --- [http-nio-8080-exec-9] Aspects$$EnhancerBySpringCGLIB$$cfdf6b97 : void com.springboot.webappdb.topics.TopicService.addTopic(Topic) method called after execution
+2022-03-08 07:17:37.723 TRACE 8500 --- [http-nio-8080-exec-9] Aspects$$EnhancerBySpringCGLIB$$cfdf6b97 : void com.springboot.webappdb.topics.TopicControllers.addTopic(Topic) method called after execution
+2022-03-08 07:18:25.540 TRACE 8500 --- [http-nio-8080-exec-10] Aspects$$EnhancerBySpringCGLIB$$cfdf6b97 : List com.springboot.webappdb.topics.TopicControllers.getAllTopics() method called before execution
+2022-03-08 07:18:25.544 TRACE 8500 --- [http-nio-8080-exec-10] Aspects$$EnhancerBySpringCGLIB$$cfdf6b97 : List com.springboot.webappdb.topics.TopicControllers.getAllTopics() method called after execution
+2022-03-08 07:19:47.704 TRACE 8500 --- [http-nio-8080-exec-2] Aspects$$EnhancerBySpringCGLIB$$cfdf6b97 : List com.springboot.webappdb.topics.TopicControllers.getAllTopics() method called before execution
+2022-03-08 07:19:47.704 TRACE 8500 --- [http-nio-8080-exec-2] Aspects$$EnhancerBySpringCGLIB$$cfdf6b97 : List com.springboot.webappdb.topics.TopicControllers.getAllTopics() method called after execution
+2022-03-08 07:27:18.979  INFO 8500 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-03-08 07:27:18.983  INFO 8500 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-03-08 07:27:18.991  INFO 8500 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-03-08 07:34:27.476  INFO 9820 --- [main] c.s.webappdb.WebappDbApplication         : Starting WebappDbApplication using Java 17.0.1 on Abdurraheem with PID 9820 (E:\abdur\Documents\IntelliJ\webappDb\target\classes started by abdur in E:\abdur\Documents\IntelliJ\webappDb)
+2022-03-08 07:34:27.480 DEBUG 9820 --- [main] c.s.webappdb.WebappDbApplication         : Running with Spring Boot v2.6.4, Spring v5.3.16
+2022-03-08 07:34:27.480  INFO 9820 --- [main] c.s.webappdb.WebappDbApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-03-08 07:34:28.395  INFO 9820 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-08 07:34:28.463  INFO 9820 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 2 JPA repository interfaces.
+2022-03-08 07:34:29.538  INFO 9820 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-03-08 07:34:29.550  INFO 9820 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-08 07:34:29.550  INFO 9820 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-03-08 07:34:29.702  INFO 9820 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-03-08 07:34:29.706  INFO 9820 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2162 ms
+2022-03-08 07:34:30.023  INFO 9820 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-08 07:34:30.087  INFO 9820 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-03-08 07:34:30.283  INFO 9820 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-03-08 07:34:30.411  INFO 9820 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-03-08 07:34:30.654  INFO 9820 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-03-08 07:34:30.671  INFO 9820 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-03-08 07:34:31.468  INFO 9820 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-08 07:34:31.477  INFO 9820 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-03-08 07:34:32.107 TRACE 9820 --- [main] Aspects$$EnhancerBySpringCGLIB$$f841b34c : OpenAPI com.springboot.webappdb.WebappDbApplication$SwaggerConfig.springOpenAPI() method called before execution
+2022-03-08 07:34:32.119 TRACE 9820 --- [main] Aspects$$EnhancerBySpringCGLIB$$f841b34c : OpenAPI com.springboot.webappdb.WebappDbApplication$SwaggerConfig.springOpenAPI() method called after execution
+2022-03-08 07:34:32.332  WARN 9820 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-08 07:34:33.548  INFO 9820 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-03-08 07:34:33.560  INFO 9820 --- [main] c.s.webappdb.WebappDbApplication         : Started WebappDbApplication in 6.648 seconds (JVM running for 7.237)
+2022-03-08 07:34:49.412  INFO 9820 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-08 07:34:49.412  INFO 9820 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-03-08 07:34:49.416  INFO 9820 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2022-03-08 07:34:49.451 TRACE 9820 --- [http-nio-8080-exec-1] Aspects$$EnhancerBySpringCGLIB$$f841b34c : List com.springboot.webappdb.topics.TopicControllers.getAllTopics() method called before execution
+2022-03-08 07:34:49.463 TRACE 9820 --- [http-nio-8080-exec-1] Aspects$$EnhancerBySpringCGLIB$$f841b34c : List com.springboot.webappdb.topics.TopicService.getAllTopics() method called before execution
+2022-03-08 07:34:49.471 TRACE 9820 --- [http-nio-8080-exec-1] Aspects$$EnhancerBySpringCGLIB$$f841b34c : Iterable org.springframework.data.repository.CrudRepository.findAll() method called before execution
+2022-03-08 07:34:49.658 TRACE 9820 --- [http-nio-8080-exec-1] Aspects$$EnhancerBySpringCGLIB$$f841b34c : Iterable org.springframework.data.repository.CrudRepository.findAll() method called after execution
+2022-03-08 07:34:49.659 TRACE 9820 --- [http-nio-8080-exec-1] Aspects$$EnhancerBySpringCGLIB$$f841b34c : List com.springboot.webappdb.topics.TopicService.getAllTopics() method called after execution
+2022-03-08 07:34:49.659 TRACE 9820 --- [http-nio-8080-exec-1] Aspects$$EnhancerBySpringCGLIB$$f841b34c : List com.springboot.webappdb.topics.TopicControllers.getAllTopics() method called after execution
+2022-03-08 07:35:19.659 TRACE 9820 --- [http-nio-8080-exec-3] Aspects$$EnhancerBySpringCGLIB$$f841b34c : List com.springboot.webappdb.topics.TopicControllers.getAllTopics() method called before execution
+2022-03-08 07:35:19.659 TRACE 9820 --- [http-nio-8080-exec-3] Aspects$$EnhancerBySpringCGLIB$$f841b34c : List com.springboot.webappdb.topics.TopicService.getAllTopics() method called before execution
+2022-03-08 07:35:19.659 TRACE 9820 --- [http-nio-8080-exec-3] Aspects$$EnhancerBySpringCGLIB$$f841b34c : Iterable org.springframework.data.repository.CrudRepository.findAll() method called before execution
+2022-03-08 07:35:19.667 TRACE 9820 --- [http-nio-8080-exec-3] Aspects$$EnhancerBySpringCGLIB$$f841b34c : Iterable org.springframework.data.repository.CrudRepository.findAll() method called after execution
+2022-03-08 07:35:19.667 TRACE 9820 --- [http-nio-8080-exec-3] Aspects$$EnhancerBySpringCGLIB$$f841b34c : List com.springboot.webappdb.topics.TopicService.getAllTopics() method called after execution
+2022-03-08 07:35:19.667 TRACE 9820 --- [http-nio-8080-exec-3] Aspects$$EnhancerBySpringCGLIB$$f841b34c : List com.springboot.webappdb.topics.TopicControllers.getAllTopics() method called after execution
+2022-03-08 07:35:49.318 TRACE 9820 --- [http-nio-8080-exec-4] Aspects$$EnhancerBySpringCGLIB$$f841b34c : List com.springboot.webappdb.topics.TopicControllers.getAllTopics() method called before execution
+2022-03-08 07:35:49.318 TRACE 9820 --- [http-nio-8080-exec-4] Aspects$$EnhancerBySpringCGLIB$$f841b34c : List com.springboot.webappdb.topics.TopicService.getAllTopics() method called before execution
+2022-03-08 07:35:49.318 TRACE 9820 --- [http-nio-8080-exec-4] Aspects$$EnhancerBySpringCGLIB$$f841b34c : Iterable org.springframework.data.repository.CrudRepository.findAll() method called before execution
+2022-03-08 07:35:49.329 TRACE 9820 --- [http-nio-8080-exec-4] Aspects$$EnhancerBySpringCGLIB$$f841b34c : Iterable org.springframework.data.repository.CrudRepository.findAll() method called after execution
+2022-03-08 07:35:49.330 TRACE 9820 --- [http-nio-8080-exec-4] Aspects$$EnhancerBySpringCGLIB$$f841b34c : List com.springboot.webappdb.topics.TopicService.getAllTopics() method called after execution
+2022-03-08 07:35:49.330 TRACE 9820 --- [http-nio-8080-exec-4] Aspects$$EnhancerBySpringCGLIB$$f841b34c : List com.springboot.webappdb.topics.TopicControllers.getAllTopics() method called after execution
+2022-03-08 07:36:15.546  INFO 9820 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-03-08 07:36:15.546  INFO 9820 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-03-08 07:36:15.554  INFO 9820 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-03-08 07:38:10.689  INFO 14936 --- [main] c.s.webappdb.WebappDbApplication         : Starting WebappDbApplication using Java 17.0.1 on Abdurraheem with PID 14936 (E:\abdur\Documents\IntelliJ\webappDb\target\classes started by abdur in E:\abdur\Documents\IntelliJ\webappDb)
+2022-03-08 07:38:10.693 DEBUG 14936 --- [main] c.s.webappdb.WebappDbApplication         : Running with Spring Boot v2.6.4, Spring v5.3.16
+2022-03-08 07:38:10.693  INFO 14936 --- [main] c.s.webappdb.WebappDbApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-03-08 07:38:11.617  INFO 14936 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-08 07:38:11.682  INFO 14936 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 2 JPA repository interfaces.
+2022-03-08 07:38:12.729  INFO 14936 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-03-08 07:38:12.741  INFO 14936 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-08 07:38:12.745  INFO 14936 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-03-08 07:38:12.885  INFO 14936 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-03-08 07:38:12.885  INFO 14936 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2120 ms
+2022-03-08 07:38:13.303  INFO 14936 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-08 07:38:13.415  INFO 14936 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-03-08 07:38:13.704  INFO 14936 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-03-08 07:38:13.869  INFO 14936 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-03-08 07:38:14.139  INFO 14936 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-03-08 07:38:14.163  INFO 14936 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-03-08 07:38:14.999  INFO 14936 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-08 07:38:15.007  INFO 14936 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-03-08 07:38:15.677 TRACE 14936 --- [main] Aspects$$EnhancerBySpringCGLIB$$a0853349 : OpenAPI com.springboot.webappdb.WebappDbApplication$SwaggerConfig.springOpenAPI() method called before execution
+2022-03-08 07:38:15.693 TRACE 14936 --- [main] Aspects$$EnhancerBySpringCGLIB$$a0853349 : OpenAPI com.springboot.webappdb.WebappDbApplication$SwaggerConfig.springOpenAPI() method called after execution
+2022-03-08 07:38:15.894  WARN 14936 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-08 07:38:17.151  INFO 14936 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-03-08 07:38:17.163  INFO 14936 --- [main] c.s.webappdb.WebappDbApplication         : Started WebappDbApplication in 7.014 seconds (JVM running for 7.603)
+2022-03-08 07:38:38.133  INFO 14936 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-08 07:38:38.133  INFO 14936 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-03-08 07:38:38.133  INFO 14936 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-03-08 07:38:38.169 TRACE 14936 --- [http-nio-8080-exec-1] Aspects$$EnhancerBySpringCGLIB$$a0853349 : List com.springboot.webappdb.topics.TopicControllers.getAllTopics() method called before execution
+2022-03-08 07:38:38.184 TRACE 14936 --- [http-nio-8080-exec-1] Aspects$$EnhancerBySpringCGLIB$$a0853349 : List com.springboot.webappdb.topics.TopicService.getAllTopics() method called before execution
+2022-03-08 07:38:38.196 TRACE 14936 --- [http-nio-8080-exec-1] Aspects$$EnhancerBySpringCGLIB$$a0853349 : Iterable org.springframework.data.repository.CrudRepository.findAll() method called before execution
+2022-03-08 07:38:38.388 TRACE 14936 --- [http-nio-8080-exec-1] Aspects$$EnhancerBySpringCGLIB$$a0853349 : Iterable org.springframework.data.repository.CrudRepository.findAll() method called after execution
+2022-03-08 07:38:38.390 TRACE 14936 --- [http-nio-8080-exec-1] Aspects$$EnhancerBySpringCGLIB$$a0853349 : List com.springboot.webappdb.topics.TopicService.getAllTopics() method called after execution
+2022-03-08 07:38:38.391 TRACE 14936 --- [http-nio-8080-exec-1] Aspects$$EnhancerBySpringCGLIB$$a0853349 : List com.springboot.webappdb.topics.TopicControllers.getAllTopics() method called after execution
+2022-03-08 07:39:21.743 TRACE 14936 --- [http-nio-8080-exec-2] Aspects$$EnhancerBySpringCGLIB$$a0853349 : List com.springboot.webappdb.topics.TopicControllers.getAllTopics() method called before execution
+2022-03-08 07:39:21.743 TRACE 14936 --- [http-nio-8080-exec-2] Aspects$$EnhancerBySpringCGLIB$$a0853349 : List com.springboot.webappdb.topics.TopicService.getAllTopics() method called before execution
+2022-03-08 07:39:21.743 TRACE 14936 --- [http-nio-8080-exec-2] Aspects$$EnhancerBySpringCGLIB$$a0853349 : Iterable org.springframework.data.repository.CrudRepository.findAll() method called before execution
+2022-03-08 07:39:21.752 TRACE 14936 --- [http-nio-8080-exec-2] Aspects$$EnhancerBySpringCGLIB$$a0853349 : Iterable org.springframework.data.repository.CrudRepository.findAll() method called after execution
+2022-03-08 07:39:21.752 TRACE 14936 --- [http-nio-8080-exec-2] Aspects$$EnhancerBySpringCGLIB$$a0853349 : List com.springboot.webappdb.topics.TopicService.getAllTopics() method called after execution
+2022-03-08 07:39:21.752 TRACE 14936 --- [http-nio-8080-exec-2] Aspects$$EnhancerBySpringCGLIB$$a0853349 : List com.springboot.webappdb.topics.TopicControllers.getAllTopics() method called after execution
+2022-03-08 07:39:37.648  INFO 14936 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-03-08 07:39:37.652  INFO 14936 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-03-08 07:39:37.659  INFO 14936 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-03-08 07:40:09.678  INFO 1896 --- [main] c.s.webappdb.WebappDbApplication         : Starting WebappDbApplication using Java 17.0.1 on Abdurraheem with PID 1896 (E:\abdur\Documents\IntelliJ\webappDb\target\classes started by abdur in E:\abdur\Documents\IntelliJ\webappDb)
+2022-03-08 07:40:09.678 DEBUG 1896 --- [main] c.s.webappdb.WebappDbApplication         : Running with Spring Boot v2.6.4, Spring v5.3.16
+2022-03-08 07:40:09.682  INFO 1896 --- [main] c.s.webappdb.WebappDbApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-03-08 07:40:10.642  INFO 1896 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-08 07:40:10.710  INFO 1896 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56 ms. Found 2 JPA repository interfaces.
+2022-03-08 07:40:11.737  INFO 1896 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-03-08 07:40:11.753  INFO 1896 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-08 07:40:11.753  INFO 1896 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-03-08 07:40:11.913  INFO 1896 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-03-08 07:40:11.913  INFO 1896 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2141 ms
+2022-03-08 07:40:12.234  INFO 1896 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-08 07:40:12.306  INFO 1896 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-03-08 07:40:12.507  INFO 1896 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-03-08 07:40:12.635  INFO 1896 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-03-08 07:40:12.915  INFO 1896 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-03-08 07:40:12.943  INFO 1896 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-03-08 07:40:13.786  INFO 1896 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-08 07:40:13.792  INFO 1896 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-03-08 07:40:14.538 TRACE 1896 --- [main] Aspects$$EnhancerBySpringCGLIB$$97fbf952 : OpenAPI com.springboot.webappdb.WebappDbApplication$SwaggerConfig.springOpenAPI() method called before execution
+2022-03-08 07:40:14.554 TRACE 1896 --- [main] Aspects$$EnhancerBySpringCGLIB$$97fbf952 : OpenAPI com.springboot.webappdb.WebappDbApplication$SwaggerConfig.springOpenAPI() method called after execution
+2022-03-08 07:40:14.774  WARN 1896 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-08 07:40:16.217  INFO 1896 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-03-08 07:40:16.233  INFO 1896 --- [main] c.s.webappdb.WebappDbApplication         : Started WebappDbApplication in 7.094 seconds (JVM running for 7.662)
+2022-03-08 07:40:21.632  INFO 1896 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-08 07:40:21.632  INFO 1896 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-03-08 07:40:21.632  INFO 1896 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-03-08 07:40:21.664 TRACE 1896 --- [http-nio-8080-exec-2] Aspects$$EnhancerBySpringCGLIB$$97fbf952 : List com.springboot.webappdb.topics.TopicControllers.getAllTopics() method called before execution
+2022-03-08 07:40:21.676 TRACE 1896 --- [http-nio-8080-exec-2] Aspects$$EnhancerBySpringCGLIB$$97fbf952 : List com.springboot.webappdb.topics.TopicService.getAllTopics() method called before execution
+2022-03-08 07:40:21.684 TRACE 1896 --- [http-nio-8080-exec-2] Aspects$$EnhancerBySpringCGLIB$$97fbf952 : Iterable org.springframework.data.repository.CrudRepository.findAll() method called before execution
+2022-03-08 07:40:21.881 TRACE 1896 --- [http-nio-8080-exec-2] Aspects$$EnhancerBySpringCGLIB$$97fbf952 : Iterable org.springframework.data.repository.CrudRepository.findAll() method called after execution
+2022-03-08 07:40:21.882 TRACE 1896 --- [http-nio-8080-exec-2] Aspects$$EnhancerBySpringCGLIB$$97fbf952 : List com.springboot.webappdb.topics.TopicService.getAllTopics() method called after execution
+2022-03-08 07:40:21.882 TRACE 1896 --- [http-nio-8080-exec-2] Aspects$$EnhancerBySpringCGLIB$$97fbf952 : List com.springboot.webappdb.topics.TopicControllers.getAllTopics() method called after execution
+2022-03-08 07:40:35.322 TRACE 1896 --- [http-nio-8080-exec-1] Aspects$$EnhancerBySpringCGLIB$$97fbf952 : List com.springboot.webappdb.topics.TopicControllers.getAllTopics() method called before execution
+2022-03-08 07:40:35.322 TRACE 1896 --- [http-nio-8080-exec-1] Aspects$$EnhancerBySpringCGLIB$$97fbf952 : List com.springboot.webappdb.topics.TopicControllers.getAllTopics() method called after execution
+2022-03-08 07:40:57.389 TRACE 1896 --- [http-nio-8080-exec-4] Aspects$$EnhancerBySpringCGLIB$$97fbf952 : void com.springboot.webappdb.topics.TopicControllers.deleteTopic(String) method called before execution
+2022-03-08 07:40:57.405 TRACE 1896 --- [http-nio-8080-exec-4] Aspects$$EnhancerBySpringCGLIB$$97fbf952 : void com.springboot.webappdb.topics.TopicService.deleteTopic(String) method called before execution
+2022-03-08 07:40:57.405 TRACE 1896 --- [http-nio-8080-exec-4] Aspects$$EnhancerBySpringCGLIB$$97fbf952 : void org.springframework.data.repository.CrudRepository.deleteById(Object) method called before execution
+2022-03-08 07:40:57.464 TRACE 1896 --- [http-nio-8080-exec-4] Aspects$$EnhancerBySpringCGLIB$$97fbf952 : void org.springframework.data.repository.CrudRepository.deleteById(Object) method called after execution
+2022-03-08 07:40:57.465 TRACE 1896 --- [http-nio-8080-exec-4] Aspects$$EnhancerBySpringCGLIB$$97fbf952 : void com.springboot.webappdb.topics.TopicService.deleteTopic(String) method called after execution
+2022-03-08 07:40:57.465 TRACE 1896 --- [http-nio-8080-exec-4] Aspects$$EnhancerBySpringCGLIB$$97fbf952 : void com.springboot.webappdb.topics.TopicControllers.deleteTopic(String) method called after execution
+2022-03-08 07:41:06.503 TRACE 1896 --- [http-nio-8080-exec-5] Aspects$$EnhancerBySpringCGLIB$$97fbf952 : List com.springboot.webappdb.topics.TopicControllers.getAllTopics() method called before execution
+2022-03-08 07:41:06.503 TRACE 1896 --- [http-nio-8080-exec-5] Aspects$$EnhancerBySpringCGLIB$$97fbf952 : List com.springboot.webappdb.topics.TopicControllers.getAllTopics() method called after execution
+2022-03-08 07:41:15.447 TRACE 1896 --- [http-nio-8080-exec-6] Aspects$$EnhancerBySpringCGLIB$$97fbf952 : List com.springboot.webappdb.topics.TopicControllers.getAllTopics() method called before execution
+2022-03-08 07:41:15.447 TRACE 1896 --- [http-nio-8080-exec-6] Aspects$$EnhancerBySpringCGLIB$$97fbf952 : List com.springboot.webappdb.topics.TopicControllers.getAllTopics() method called after execution
+2022-03-08 07:42:07.357  INFO 1896 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-03-08 07:42:07.361  INFO 1896 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-03-08 07:42:07.368  INFO 1896 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
