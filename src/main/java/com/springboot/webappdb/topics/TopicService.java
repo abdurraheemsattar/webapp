@@ -20,7 +20,7 @@ public class TopicService {
     private TopicRepository topicRepository;
 
 
-    @Cacheable()
+    @Cacheable
     public List<Topic> getAllTopics() {
         List<Topic> topics = new ArrayList<>();
         topicRepository.findAll().forEach(topics::add);
@@ -32,15 +32,19 @@ public class TopicService {
         return topicRepository.findById(id).orElse(null);
     }
 
-    @CacheEvict
+
+    //@CachePut( cacheNames = {"topics"},key = "#topic")
+    @CacheEvict(value = "topics", key = "#topic")
     public void addTopic(Topic topic) {
         topicRepository.save(topic);
     }
 
+    //@CacheEvict(key = "#topic")
     public void updateTopic(Topic topic, String id) {
         topicRepository.save(topic);
     }
 
+    //@CacheEvict(key = "#id")
     public void deleteTopic(String id) {
         topicRepository.deleteById(id);
     }

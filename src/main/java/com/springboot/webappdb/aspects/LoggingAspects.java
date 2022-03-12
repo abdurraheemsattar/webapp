@@ -10,7 +10,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.Configuration;
 
 
-/*
 @Aspect
 @Configuration
 public class LoggingAspects {
@@ -20,7 +19,8 @@ public class LoggingAspects {
 
     //   star for any return type, this package, for any class, for any method, for any parameter
 //    @Before("execution(* com.springboot.webappdb.*.*(..))")
-//    @Before("execution(* com.springboot.webappdb.topics.*.*(..))")
+
+    //    @Before("execution(* com.springboot.webappdb.topics.*.*(..))")
     @Before("execution(* com.springboot.webappdb.*.*.*(..))")
     public void beforeLogger(JoinPoint joinPoint) {
         //joinPoint.getSignature().getName();
@@ -35,6 +35,6 @@ public class LoggingAspects {
 
 
 }
-*/
+
 
 
